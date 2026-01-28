@@ -52,58 +52,59 @@
             font-weight: normal;
         }
 
-        .card {
-            display: flex;
+
+        .services-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
             background-color: #ffffff;
             border-radius: 15px;
-            padding: 20px;
-            max-width: 850px;
-            margin: 20px auto;
-            border: 1px solid #ddd;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+            overflow: hidden;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+            margin: 30px 0;
         }
 
-        .image-container {
-            width: 250px;
-            min-width: 250px;
-            background-color: #fcfcfc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            border: 1px solid #f0f0f0;
-        }
-
-        .image-container img {
-            width: 75%;
-            height: auto;
-        }
-
-        .text-content {
-            flex-grow: 1;
-            padding-left: 25px;
-            text-align: left;
-        }
-
-        .text-content h3 {
-            color: #43334c;
-            margin-top: 0;
-            font-size: 1.5em;
-            border-bottom: 2px solid #fce4ec;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-
-        .status-badge {
-            display: inline-block;
+        .services-table th {
             background-color: #43334c;
             color: white;
-            padding: 4px 10px;
-            border-radius: 5px;
-            font-size: 0.75em;
+            padding: 15px;
+            text-align: center;
             text-transform: uppercase;
+            font-size: 0.9em;
             letter-spacing: 1px;
-            margin-bottom: 8px;
+            border-bottom: 2px solid #ff8fb7;
+        }
+
+        .services-table td {
+            padding: 20px;
+            vertical-align: middle;
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        .col-brand {
+            background-color: #f3eff5; 
+            width: 180px;
+            text-align: center;
+            font-weight: bold;
+            color: #43334c;
+        }
+
+        .col-details {
+            background-color: #ffffff;
+        }
+
+        .col-action {
+            background-color: #f3eff5;; 
+            width: 180px;
+            text-align: center;
+        }
+
+        .brand-logo {
+            width: 50px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
         }
 
         .specs-list {
@@ -111,6 +112,7 @@
             list-style-type: none;
             color: #555;
             padding-left: 0;
+            margin: 0;
         }
 
         .specs-list li {
@@ -129,19 +131,19 @@
 
         .service-link {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
+            padding: 10px 15px;
             background-color: #ff8fb7;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            font-size: 14px;
-            transition: background-color 0.3s;
+            font-size: 13px;
+            transition: 0.3s;
         }
 
         .service-link:hover {
             background-color: #43334c;
+            transform: scale(1.05);
         }
 
         footer {
@@ -170,55 +172,67 @@
         <a href="contact.htm">Contact</a>
     </nav>
 
-    <h1>Brand Official Repair Services</h1>
+    <h1>Official Brand Repair Channels</h1>
 
-    <div class="card">
-        <div class="image-container">
-            <img src="images/apple.png" alt="Apple Support">
-        </div>
-        <div class="text-content">
-            <span class="status-badge">Apple Official</span>
-            <h3>Apple Support & Self-Service</h3>
-            <ul class="specs-list">
-                <li>Genuine parts and professional diagnostic tools.</li>
-                <li>Book Genius Bar appointments or mail-in repairs.</li>
-                <li>Access to official service manuals for self-repair.</li>
-            </ul>
-            <a href="https://support.apple.com/en-gb/repair-products" class="service-link" target="_blank">Visit Apple Support →</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image-container">
-            <img src="images/samsung.png" alt="Samsung Support">
-        </div>
-        <div class="text-content">
-            <span class="status-badge">Samsung Official</span>
-            <h3>Samsung Care & Repair</h3>
-            <ul class="specs-list">
-                <li>Doorstep repair services and certified technicians.</li>
-                <li>Check your Samsung Care+ coverage status online.</li>
-                <li>Environmentally responsible parts recycling.</li>
-            </ul>
-            <a href="https://www.samsung.com/uk/support/repair/" class="service-link" target="_blank">Visit Samsung Repair →</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="image-container">
-            <img src="images/google.png" alt="Google Support">
-        </div>
-        <div class="text-content">
-            <span class="status-badge">Google Official</span>
-            <h3>Pixel Support & iFixit</h3>
-            <ul class="specs-list">
-                <li>Walk-in repairs at authorized service providers.</li>
-                <li>Official Google parts kits via iFixit partnership.</li>
-                <li>Extended software support documentation.</li>
-            </ul>
-            <a href="https://store.google.com/gb/magazine/repaircenter" class="service-link" target="_blank">Visit Pixel Support →</a>
-        </div>
-    </div>
+    <table class="services-table">
+        <thead>
+            <tr>
+                <th>Brand</th>
+                <th>Service Details</th>
+                <th>Official Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-brand">
+                    <img src="images/apple.png" alt="Apple" class="brand-logo">
+                    Apple Support
+                </td>
+                <td class="col-details">
+                    <ul class="specs-list">
+                        <li>Genuine parts and professional diagnostic tools.</li>
+                        <li>Book Genius Bar appointments or mail-in repairs.</li>
+                        <li>Access to official service manuals for self-repair.</li>
+                    </ul>
+                </td>
+                <td class="col-action">
+                    <a href="https://support.apple.com/en-gb/repair-products" class="service-link" target="_blank">Repair Portal →</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-brand">
+                    <img src="images/samsung.png" alt="Samsung" class="brand-logo">
+                    Samsung Care
+                </td>
+                <td class="col-details">
+                    <ul class="specs-list">
+                        <li>Doorstep repair services and certified technicians.</li>
+                        <li>Check your Samsung Care+ coverage status online.</li>
+                        <li>Environmentally responsible parts recycling.</li>
+                    </ul>
+                </td>
+                <td class="col-action">
+                    <a href="https://www.samsung.com/uk/support/repair/" class="service-link" target="_blank">Book Repair →</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-brand">
+                    <img src="images/google.png" alt="Google" class="brand-logo">
+                    Google Pixel
+                </td>
+                <td class="col-details">
+                    <ul class="specs-list">
+                        <li>Walk-in repairs at authorized service providers.</li>
+                        <li>Official Google parts kits via iFixit partnership.</li>
+                        <li>Extended software support documentation.</li>
+                    </ul>
+                </td>
+                <td class="col-action">
+                    <a href="https://store.google.com/gb/magazine/repaircenter" class="service-link" target="_blank">Get Support →</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <footer>
         Made by Ashton Hughes
