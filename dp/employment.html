@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashton Hughes | Digital Portfolio</title>
+    <style>
+        /* Color scheme updated to match the image provided */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #84ac73; /* Bottom background green from photo */
+            color: #333;
+        }
+
+        header {
+            background-color: #559551; /* Main header green from photo */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* The specific border box from your photo */
+.header-border-box {
+    border: 3px ridge #ffffff;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 30px 150px;
+    
+    /* Add these lines below */
+    background-image: url('images/me.png'); /* Change this to your filename */
+    background-size: cover;                       /* Makes the image fit the box */
+    background-position: center;                  /* Centers the image */
+}
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            color: white;
+            margin: 10px 0 0 0;
+            font-weight: 500;
+        }
+
+        /* Navigation Bar matching the lighter green strip in photo */
+        nav {
+            background-color: #70c167; 
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #1b3022;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+
+        h2 {
+            color: #4a5d4a;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .audio-player {
+            background: #f1f4f0;
+            padding: 1px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+            border: 1px solid #cedbce;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-border-box">
+            <h1>Ashton<br>Hughes</h1>
+            <p>IT Student | Technical Portfolio</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About Me</a>
+        <a href="qualifications.html" >Qualifications</a>
+        <a href="skills.html">Skills</a>
+        <a href="employment.html" style="background-color: #224d20; color: white; border-radius: 10px; padding: 5px;">Employment</a>
+        <a href="hobbies.html">Gallery</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>My Past Employment</h2>
+            <h3>Event Waiter</h3>
+            <p>i worked as an event waiter at the grovner pulford hotel and spa for 3 months</p>
+            <h3>Kitchen Porter</h3>
+            <p>i am curently working as a kitchen porter at the Cardenarms</p>
+        </section>
+
+
+        <section class="audio-player">
+            <h3>Audio Introduction</h3>
+            <audio controls>
+                <source src="intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ashton Hughes | Level 2 IT Coursework</p>
+    </footer>
+
+</body>
+</html>

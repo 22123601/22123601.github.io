@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashton Hughes | Digital Portfolio</title>
+    <style>
+        /* Color scheme updated to match the image provided */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #84ac73; /* Bottom background green from photo */
+            color: #333;
+        }
+
+        header {
+            background-color: #559551; /* Main header green from photo */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* The specific border box from your photo */
+.header-border-box {
+    border: 3px ridge #ffffff;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 30px 150px;
+    
+    /* Add these lines below */
+    background-image: url('images/me.png'); /* Change this to your filename */
+    background-size: cover;                       /* Makes the image fit the box */
+    background-position: center;                  /* Centers the image */
+}
+
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            color: white;
+            margin: 10px 0 0 0;
+            font-weight: 500;
+        }
+
+        /* Navigation Bar matching the lighter green strip in photo */
+        nav {
+            background-color: #70c167; 
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #1b3022;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+
+        h2 {
+            color: #4a5d4a;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .audio-player {
+            background: #f1f4f0;
+            padding: 1px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+            border: 1px solid #cedbce;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .button-container {
+    display: flex;
+    justify-content: center; /* This centers it horizontally */
+    align-items: center;     /* This centers it vertically (if the div has height) */
+    width: 100%;             /* Ensures the container takes up the full width */
+    text-decoration: dotted;
+}  
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-border-box">
+            <h1>Ashton<br>Hughes</h1>
+            <p>IT Student | Technical Portfolio</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="about.html">About Me</a>
+        <a href="qualifications.html" >Qualifications</a>
+        <a href="skills.html">Skills</a>
+        <a href="employment.html">Employment</a>
+        <a href="hobbies.html" style="background-color: #224d20; color: white; border-radius: 10px; padding: 5px;">Gallery</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>My Gallery</h2>
+
+            <h4>Websites</h4>
+            <p>if you wish to check out any of the websites i have coded, please follow the link below</p><br>
+<div class="button-container">
+    <a href="../index.html" style="background-color: #224d20; color: white; border-radius: 20px; padding: 15px; text-decoration: none;">Gallery</a>
+</div>
+
+            <br>
+            <h4>Images</h4>
+            <p>these are images i have created for my digital graphics unit in college, they might be a little silly but oh well.</p>
+        </section>
+
+
+        <section class="audio-player">
+            <h3>Audio Introduction</h3>
+            <audio controls>
+                <source src="intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ashton Hughes | Level 2 IT Coursework</p>
+    </footer>
+
+</body>
+</html>
